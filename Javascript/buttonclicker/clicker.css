@@ -1,0 +1,157 @@
+.container{
+
+    width: 850px; 
+    height: 700px;
+    border: solid black 2px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    width:800px;
+    height: 90px;
+    
+    background-color: #cccccc;
+    margin-left: 250px;
+    /* margin: 20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+
+
+
+   
+}
+
+.search{
+    height: 40px;
+    width: 250px;
+}
+
+main{
+    border: black;
+}
+
+.butt{
+    margin-right: 50px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    box-shadow: 6px 3px black;
+}
+
+.top-side-main{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height:300px ;
+   
+    background-color: white;
+    margin-left: 20px;
+    /* border: 5px black; */
+    margin-top: 20px;
+
+}
+
+.top-left{
+    width:500px ;
+    height: 250px;
+   border: solid black 3px;
+   background-color: white;
+   display: flex;
+   justify-content: space-between;
+   /* border: 5px, black; */
+}
+
+.top-right{
+    width:250px;
+    height:250px ;
+    /* margin-top: 50px; */
+    border: solid black 3px;
+    background-color: white;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
+    border: solid black 3px,;
+    
+   
+  
+}
+
+.bottom-side-main{
+    width:500px ;
+    height: 250px;
+   border: solid black 3px;
+   background-color: white;
+   margin-left: 20px;
+   margin-right: 20px;
+
+   /* text-align: center; */
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.ninja{
+    font-size: 55px;
+    margin-left: 30px;
+}
+
+.noun{
+    font-size: 30px;
+    margin-left: 55px;
+}
+
+.plural{
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+.right{
+    /* display: flex; */
+    width: 50px;
+    
+}
+
+.like{
+    margin-top: 25px;
+    margin-left: 25px;
+    background-color:yellow;
+    color: black;
+    width: 120px;
+    height: 50px;
+    box-shadow: 2px 2px black;
+    font-size: 20px;
+}
+
+.left{
+    width: 280px;
+    align-items: center;
+}
+
+p{
+    font-size: 25px;
+    margin-top: 90px;
+}
+
+.prgh{
+  font-size: 20px;
+  margin-left: 40px;
+  text-align: center;
+}
+
+.butt2{
+    width: 190px;
+    /* margin-bottom: 90px; */
+   height: 50px;
+   color:black ;
+   background-color:#93c47d ;
+   border: solid black 2px;
+   box-shadow: 2px 2px;
+   font-size: 20px;
+   margin-left: 20px;
+}
+

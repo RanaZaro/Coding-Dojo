@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dojo weather</title>
+    <link rel="stylesheet" href="weath.css">
+</head>
+<body>
+  <main>
+    <header>
+        <h1>DojoWeather</h1>
+        <div class="head-right">
+            <label onclick="city(this)">Burbank</label>
+            <label onclick="city(this)">Chicago</label>
+            <label onclick="city(this)">Dallas</label>
+        </div>
+    </header>
+    <nav>
+        <h2>San Jose</h2>
+        <div class="nav-right">
+            <label id="temp">show tempreture in</label>
+
+            <select name="tempreture" onchange = "convert(this)">                
+                <option value="celsius">°C</option>
+                <option value="Fahrenheit">°F</option>
+            </select>
+        </div>
+       
+
+    </nav>
+   
+    <div class="weath">
+        <div class="weath1">
+            <h3>Today</h3>
+            <img class="rainy" src="some_rain.png" alt="rainy" >
+            <h4>some rain</h4>
+            <div class="deg">
+                <span id="deg3" class="deg1">24</span>
+                <span id="deg3" class="deg2">18</span>
+            </div>
+           
+            
+
+        </div>
+        <div class="weath1">
+            <h3>Tomorrow </h3>
+            <img class="rainy" src="some_sun.png" alt="rainy" >
+            <h4>some sun</h4>
+            <div class="deg">
+                <span id="deg3" class="deg1">27</span>
+                <span id="deg3" class="deg2">19</span>
+            </div>
+        </div>
+        <div class="weath1">
+            <h3>Friday </h3>
+            <img class="rainy" src="some_clouds.png" alt="rainy" >
+            <h4>some clouds</h4>
+            <div class="deg">
+                <span id="deg3" class="deg1">21</span>
+                <span id="deg3" class="deg2">16</span>
+            </div>
+        </div>
+        <div class="weath1">
+            <h3>Saturday</h3>
+            <img class="rainy" src="some_sun.png" alt="rainy" >
+            <h4>some sun</h4>
+            <div class="deg">
+                <span id="deg3" class="deg1">26</span>
+                <span id="deg3" class="deg2">21</span>
+            </div>
+        </div>
+    </div>
+    <div class="stop">
+        <img src="cookie.png" class="cookie" alt="stop cookie">
+        <div class="center-left">
+            <label>Stop! Cookie time</label>
+            <p>We use cookies (sadly not the edible ones) to personalize 
+                content and ads, to provide social media features and to
+                analyse our traffic. <a href="https://login.codingdojo.com/login">Read more...</a></p>
+        </div>
+        <button onclick="fun()">I Accept</button>
+    </div>
+
+    
+
+  </main>
+  <script src="weath.js"></script>
+  
+</body>
+</html>

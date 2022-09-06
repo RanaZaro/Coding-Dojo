@@ -1,0 +1,100 @@
+.cont1{
+    width: 900px;
+    height:720px ;
+    margin: auto;
+    border: solid 4px black;
+}
+
+nav{
+    width: 650px;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    margin-left: 100px;
+    height: 60px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+.cont2{
+    width: 800px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.left-side{
+    border: 4px black solid;
+    height: 300px;
+    width: 180px;
+    margin-left:75px;
+    flex-direction: column;
+   
+}
+
+
+ .top, .center, .bottom {
+    border: 4px black solid;
+    height: 140px;
+    width: 450px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    
+ }
+/* 
+ .right-side{
+   display: table-column;
+ } */
+
+ img{
+    width: 90px;
+    height: 90px;
+   margin-left: 45px;
+   margin-top: 30px;
+ }
+
+ label{
+    font-size: 25px;
+    margin-top: 10px;
+ }
+ 
+ .col{
+    display: flex;
+   justify-content: space-around;
+   /* padding: 10px; */
+   
+ }
+
+ p{
+    font-size: 25px;
+    margin-right: 20px;
+    margin-left: 40px;
+ }
+
+ button{
+    color: black;
+    background-color: yellow;
+    border: solid black 2px;
+    height: 40px;
+    width: 120px;
+    box-shadow: 4px 3px;
+    font-size: 30px;
+ }
+
+ #lab, #lab2, #lab3{
+    margin-top: 10px;
+ }
+
+ .link{
+    font-size: 25px;
+    margin-left: 15px;
+    /* margin-bottom: 60px; */
+ }
+
+ #jam{
+    margin-left: 25px;
+    font-size: 30px;
+ }
