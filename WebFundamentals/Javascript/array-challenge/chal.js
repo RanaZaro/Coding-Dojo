@@ -11,6 +11,7 @@ function alwaysHungry(arr) {
        (arr[i]!="food")
         console.log("I'm hungry");
     }
+    return alwaysHungry;
 }
    
 alwaysHungry([3.14, "food", "pie", true, "food"]);

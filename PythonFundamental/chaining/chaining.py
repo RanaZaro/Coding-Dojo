@@ -21,30 +21,22 @@ rana=User("rana","rana.com",1000)
 dana=User("dana","rana.com",50)
 thabet=User("thabet","rana.com",500)
 #2
-rana.make_deposit(50)
-rana.make_deposit(50)
-rana.make_deposit(50)
-rana.make_withdrawal(50)
+
 rana.display_user_balance()
 rana.make_deposit(50).make_deposit(100)
 rana.make_withdrawal(100).make_withdrawal(100)
 
 #3
-dana.make_deposit(50)
-dana.make_deposit(50)
-dana.make_deposit(50)
-dana.make_withdrawal(50)
+
+
 dana.display_user_balance()
 dana.make_withdrawal(20).make_withdrawal(30)
 
 #4
-thabet.make_deposit(50)
-thabet.make_withdrawal(50)
-thabet.make_withdrawal(50)
-thabet.make_withdrawal(50)
+
 thabet.display_user_balance()
 dana.transfer_money(thabet,100).transfer_money(rana,10)
-dana.display_user_balance()
+
 
 
 
