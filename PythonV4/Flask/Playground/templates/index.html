@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playground</title>
+    
+    <style>
+        .box{
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+        
+        
+
+            }
+.box div{
+    width:230px;
+    margin: 10px;
+    height: 230px;
+    border: solid black 2px;
+    display: inline-block;
+    background-color: {{boxcolor}};     
+}
+    </style>
+</head>
+<body>
+    <h1 style="margin:0 auto ;text-align: center; font-size: 40px;margin-top: 40px;">Welcome!</h1>
+    <div class="box">
+
+        
+        {%for i in range(num):%}
+
+        <div>  </div>
+        {%endfor%}
+
+        
+
+    </div>
+</body>
+</html>
