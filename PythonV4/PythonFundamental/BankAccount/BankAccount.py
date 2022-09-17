@@ -28,7 +28,7 @@ class BankAccount:
         return self
 
 
-account1 = BankAccount(0.5,1000)
+account1 = BankAccount(0.01,1000)
 account1.displayAccountInfo()
 
 

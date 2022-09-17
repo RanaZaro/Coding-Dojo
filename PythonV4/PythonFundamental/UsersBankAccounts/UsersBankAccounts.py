@@ -3,7 +3,7 @@
 class User:
     def __init__(self, username):
         self.username = username
-        self.account = BankAccount(int_rate=0.01, balance=0)
+        self.account = BankAccount(int_rate=0.02, balance=0)
 
     def displayUserBalance(self):
         print("*" * 80)
@@ -34,7 +34,7 @@ class User:
 
 
 class BankAccount:
-    def __init__(self, int_rate=0.01, balance=0):
+    def __init__(self, int_rate=0.02, balance=0):
         self.int_rate = int_rate
         self.balance = balance
 
@@ -65,7 +65,7 @@ user2 = User("Samar")
 
 
 user1.displayUserBalance()
-user1.deposit(1300).withdraw(600).deposit(900).displayUserBalance()
+user1.deposit(1300).withdraw(600).deposit(900).transferMoney(user2,100).displayUserBalance()
 
 user2.displayUserBalance()
 user2.deposit(1300).withdraw(900).withdraw(800).displayUserBalance()
