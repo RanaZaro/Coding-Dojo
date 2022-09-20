@@ -1,0 +1,18 @@
+p{   
+    margin:0 auto;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+}
+div{
+    
+    width:800px;
+    margin:0 auto;   
+    text-align: center;
+    margin-top: 30px;
+    color: brown;
+    font-style: initial;
+} 
