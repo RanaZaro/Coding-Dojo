@@ -1,0 +1,1 @@
+call "C:\Users\Lenovo\Desktop\codingDojo\Coding-Dojo\PythonV4\WebDevelopment\my_environments\djangoPy3Env\Scripts\activate"
