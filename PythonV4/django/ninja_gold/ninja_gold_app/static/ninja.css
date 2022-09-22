@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    
+}
+
+h1{
+    margin-left: 75px;
+    font-size: 35px;
+    font-style: italic;
+
+}
+.box{
+    border: solid 2px black;
+    height: 200px;
+    width: 20%;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    background-color:lightyellow;
+    border: 3px solid black;
+
+}
+.container .box p{
+    font-size:25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+
+}
+button{
+    height: 40px;
+    width: 140px;
+    background-color:white ;
+    font-family: sans-serif;
+   font-weight: bold;
+   font-size: 18px;
+   box-shadow: black 2px 3px;
+}
+
+#click{
+    width: 250px;
+    height: 80px;
+    color: black;
+    background-color: lightpink;
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left:80px;
+    margin-top: 30px;
+    
+    
+}
+
+h2{
+    padding-left:70px ;
+    font-size: 35px;
+    font-style: italic;
+}
+.Activites{
+    height: 180px;
+    width: 1350px;
+    overflow:scroll;
+    background-color:lightyellow;
+    font-size: 20px;
+    margin: 0 auto;
+    padding-left: 20px;
+    border: black solid 3px;
+    
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counterr</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            
+            font-size: 3rem;
+            margin: 0 auto;
+            margin-top: 100px;
+            font-style: italic;
+        }
+        h3{
+            
+            margin: 0 auto;
+            font-size: 1.5rem;
+            font-style: italic;
+            display: flex;
+            text-align: center;
+        }
+        h4{
+            
+            margin: 0 auto;
+            font-size: 3rem;
+            margin-bottom: 30px;
+            font-style: italic;
+            
+        }
+        form{
+            margin: 0 auto;
+            
+
+        }
+        span{
+            font-size: 6.5rem;
+            color:lightblue (255, 0, 0);
+
+        }
+        button{
+            height: 50px;
+            width: 100px;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-size: 1.1rem;
+            background-color: aquamarine;
+           
+        }
+        #button{
+            height: 50px;
+            width: 100px;
+            font-weight: bold;
+            font-family: sans-serif;
+            background-color: plum;
+            font-size: 1.1rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <h3><span>{{request.session.count}}</span>     </h3>
+    <h4>Times</h4>
+    <form action="/add2" method="POST">
+    {% csrf_token %}
+        <button name="visit" value="inc2">two visits</button>
+        <button id="button" name="visit" value="reset">Reset</button>
+    </form>
+
+</body>
+</html>
