@@ -11,7 +11,7 @@ def method(request):
     return render(request,"ninjagold.html")
 
 def process_money(request):
-    now = datetime.now().strftime('%H:%M %p, %b %d, %Y')
+    now = datetime.now().strftime('%B %d %Y, %I:%M %p ')
     if request.POST['button'] == "farm":
         gold = random.randint(10,20)
         request.session['count'] += gold
