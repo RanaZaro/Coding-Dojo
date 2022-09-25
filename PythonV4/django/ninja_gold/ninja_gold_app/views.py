@@ -28,10 +28,16 @@ def process_money(request):
         activity = "You entered a house and earn " + " " + str(gold) + " "  +"gold." +" " +"(" + str(now) +")"
         request.session['activities'].append(activity)
     elif request.POST['button'] == "quest":
-        gold = random.randint(0,50)
-        request.session['count'] += gold
-        activity = "You entered a quest and earn " +" " + str(gold) + " " +"gold." +" "+"("  +  str(now) +")"
-        request.session['activities'].append(activity)
+        gold = random.randint(-50,50)       
+        if gold >0:
+
+            request.session['count'] += gold
+            activity = "You entered a quest and earn " +" " + str(gold) + " " +"gold." +" "+"("  +  str(now) +")"
+            request.session['activities'].append(activity)
+        elif gold<0:
+            request.session['count'] -= gold
+            activity = "You failed a quest and lost " +" " + str(gold) + " " +"gold." +"Ouch." + "("  +  str(now) +")"
+            request.session['activities'].append(activity)
     return redirect('/')
 
 def reset(request):
