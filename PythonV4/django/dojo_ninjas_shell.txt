@@ -1,0 +1,57 @@
+from dojo_ninjas_app.models import Dojo,Ninja
+
+class Dojo (models.Model):
+    name=models.CharField (max_length = 45)
+    city= models.CharField (max_length= 45)
+    state = models.CharField(max_length=45)
+
+class Ninja (models.Model):
+    first_name = models.CharField(max_length=45)
+    last_name = models.CharField(max_length=45)
+    dojo=models.ForeignKey(Dojo,related_name="ninjas",on_delete=models.CASCADE)
+
+
+python manage.py makemigrations dojo_ninjas_app
+python manage.py migrate
+
+python manage.py shell
+
+from your_app_name_here.models import *
+
+
+Dojo.objects.create(name="Dojo1",city="Chicago",state="xy")
+Dojo.objects.create(name="Dojo2",city="Chicago",state="xy")
+Dojo.objects.create(name="Dojo3",city="Chicago",state="xy")
+
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=1),first_name="Sara",last_name="Hamd")
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=2),first_name="Tala",last_name="Kilani")
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=3),first_name="Bana",last_name="Radi")
+
+
+Dojo.objects.get(id=1).delete()
+Dojo.objects.get(id=2).delete()
+Dojo.objects.get(id=3).delete()
+
+Dojo.objects.create(name="Dojo4",city="Chicago",state="xy")
+Dojo.objects.create(name="Dojo5",city="Chicago",state="xy")
+Dojo.objects.create(name="Dojo6",city="Chicago",state="xy")
+
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=4),first_name="Salma",last_name="Zafer")
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=5),first_name="Roy",last_name="Omar")
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=6),first_name="Raya",last_name="Hafez")
+
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=7),first_name="Omar",last_name="Raad")
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=8),first_name="Tala",last_name="Kilani")
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=9),first_name="Bana",last_name="Radi")
+
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=10),first_name="Sara",last_name="Karaki")
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=11),first_name="Lana",last_name="Jundi")
+Ninja.objects.create(dojo_id=Dojo.objects.get(id=12),first_name="Waad",last_name="Jolani")
+
+Ninja.objects.filter(dojo_id=Dojo.objects.first())
+
+Ninja.objects.filter(dojo_id=Dojo.objects.last())
+
+Ninja.objects.last().dojo_id.name
+
+Dojo.objects.create(name="Dojo7",city="Chicago",state="xy",desc="newdojo")
