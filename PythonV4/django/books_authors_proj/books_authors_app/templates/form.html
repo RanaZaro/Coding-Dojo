@@ -33,15 +33,15 @@
         </div>
         <div class="cont2">
             <table>
-                <th>
+                <tr>
                     <td>ID</td>
                     <td>Title</td>
                     <td>Action</td>
                    
-                </th>
+                </tr>
                 {%for bk in books%}
                 <tr>
-                    <td></td>
+                   
                     <td>{{bk.id}}</td>
                     <td>{{bk.title}}</td>
                     <td><a href="books/{{bk.id}}">View</a></td>
