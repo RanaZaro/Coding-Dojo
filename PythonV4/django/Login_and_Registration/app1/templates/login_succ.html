@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="welc">
+        <h2>Success! Welcome, {{user.first_name}}!</h2>
+        {% if request.session.user_id %}
+        <p style=color:green >Successfully registered (or logged in)!</p>
+        {% endif %}
+       </div>
+       <a href="/user/logout">Log Out</a>
+       
+    </div>
+    
+</body>
+</html>
