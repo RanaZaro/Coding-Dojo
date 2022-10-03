@@ -10,6 +10,4 @@ urlpatterns = [
     path('create',views.create),
     path('update/<int:show_id>',views.update),
     path('delete/<int:show_id',views.delete),
-
-
 ]

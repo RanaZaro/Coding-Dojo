@@ -50,7 +50,7 @@ def update (request, show_id):
         update = Show.objects.get(id=show_id)
     update.title = request.POST['title'] 
     update.network = request.POST['network']
-    update.release_date = request.POST['release_date']
+    update.release_date = request.POST['release_date'].format ('mm/dd/yyyy')
     update.description = request.POST['description']
     update.save()
     return redirect (f'/shows/{show_id}')

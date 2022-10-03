@@ -1,1 +1,5 @@
 call C:\Users\Lenovo\Desktop\codingDojo\Coding-Dojo\PythonV4\django\my_environments\djangoPy3Env\Scripts\activate
+
+
+
+pip install bcrypt
