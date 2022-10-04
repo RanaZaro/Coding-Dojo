@@ -40,7 +40,7 @@ def create(request):
             messages.error(request, value)
         return redirect('/shows/new')
     else:
-        c = Show.objects.create(title=request.POST['title'],network = request.POST['network'],release_date = request.POST['release_date'],description = request.POST['description'])
+        c = Show.objects.create(title=request.POST['title'],network = request.POST['network'],release_date = request.POST['release_date'],description = request.POST['Description'])
     return redirect (f'/shows/{c.id}')
 
 def update (request, show_id):
@@ -53,14 +53,14 @@ def update (request, show_id):
         update = Show.objects.get(id=show_id)
     update.title = request.POST['title'] 
     update.network = request.POST['network']
-    update.release_date = request.POST['release_date']
+    update.release_date = request.POST['release_date'].formate('yyyy-mm-DD')
     update.description = request.POST['description']
     update.save()
     return redirect (f'/shows/{show_id}')
 
 def delete (request, show_id):
-    showsgone = Show.objects.get(id=show_id)
-    showsgone = Show.delete()
+    showsgone = Show.objects.get(id=show_id).delete()
+    # showsgone = Show.delete()
     return redirect('/shows')
 
    

@@ -23,8 +23,12 @@ def register(request):
         email=request.POST['email'],
         password=pw_hash,
         )
+    request.session['first_name']=newUser.first_name
     request.session['userID'] = newUser.id
-    return redirect('/success')
+   
+    return redirect('/')
+
+
 
 
 def login(request):
@@ -34,6 +38,7 @@ def login(request):
             messages.error(request, value)
             return redirect('/')
     request.session['userID']=User.objects.get(email=request.POST['email']).id
+    request.session['first_name']=User.objects.get(email=request.POST['email']).first_name
     return redirect('/success')
 
 
